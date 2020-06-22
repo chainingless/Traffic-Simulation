@@ -14,6 +14,9 @@ class Vehicle;
 // Send should take an rvalue reference of type TrafficLightPhase whereas receive should return this type. 
 // Also, the class should define an std::dequeue called _queue, which stores objects of type TrafficLightPhase. 
 // Also, there should be an std::condition_variable as well as an std::mutex as private members. 
+enum TrafficLightPhase {
+    red, green
+};
 
 template <class T>
 class MessageQueue
